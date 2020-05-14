@@ -1,5 +1,7 @@
 version: '3'
 services:
+
+    
     web:
         stdin_open: true
         build:
@@ -10,6 +12,8 @@ services:
         volumes:
             - /app/node_modules
             - .:/app
+
+
     tests:
         stdin_open: true
         build:
